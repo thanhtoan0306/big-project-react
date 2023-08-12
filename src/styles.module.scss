@@ -1,0 +1,37 @@
+@import './Assets/mixins';
+body{
+  margin:0px;
+  padding:0px;
+  @include primeFont();
+}
+code{
+  border: 1px solid #ccc;
+  padding: 2px 4px;
+  background:#eee;
+  border-radius: 3px; 
+}
+.app{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,175,189,1) 0%, rgba(255,195,160,1) 100%, rgba(0,212,255,1) 100%);
+  margin:0px;
+  padding:30px;
+  min-height: 100vh;
+}
+.heading{
+  color:$primary-color;
+  font-size: $font-size * 2;
+  @include primeFont();
+  width: 100%;
+  text-align: center;
+}
+.subHeading{
+  @include secondaryFont();
+  text-align: center;
+}
+.warningIcon{
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background-image: url("#{$img-url}/png/512/4344/premium/4344882.png?token=exp=1657285600~hmac=2b9b5291ce456f2559d017312c4d7612");
+  background-size: contain;
+}
